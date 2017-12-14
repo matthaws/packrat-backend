@@ -12,5 +12,5 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/db/schema.rb
 .byebug_history
