@@ -1,6 +1,21 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id          :integer          not null, primary key
+#  username    :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  avatar_url  :string
+#  email       :string
+#  uid         :string
+#  provider    :string
+#  oauth_token :string
+#
+
 class User < ApplicationRecord
   validates :username, presence: true
-
+  
   has_many :bookmarks, dependent: :destroy
   has_many :articles,
     through: :bookmarks,

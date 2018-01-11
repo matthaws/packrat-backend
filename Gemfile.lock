@@ -40,6 +40,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    annotate (2.7.2)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 13.0)
     arel (8.0.0)
     builder (3.2.3)
     byebug (9.1.0)
@@ -137,6 +140,8 @@ GEM
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     public_suffix (3.0.1)
     puma (3.11.0)
     rack (2.0.3)
@@ -221,6 +226,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   byebug
   capybara
   database_cleaner
@@ -236,6 +242,7 @@ DEPENDENCIES
   omniauth-github
   omniauth-oauth2
   pg (~> 0.18)
+  pry-rails
   puma (~> 3.7)
   rack-cors
   rails (~> 5.1.4)

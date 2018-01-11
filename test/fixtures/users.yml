@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id          :integer          not null, primary key
+#  username    :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  avatar_url  :string
+#  email       :string
+#  uid         :string
+#  provider    :string
+#  oauth_token :string
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 # This model initially had no columns defined. If you add columns to the
