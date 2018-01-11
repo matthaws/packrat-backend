@@ -14,3 +14,7 @@
 !/tmp/.keep
 /db/schema.rb
 .byebug_history
+/config/secrets.yml
+
+# Ignore application configuration
+/config/application.yml
