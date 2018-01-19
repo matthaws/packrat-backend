@@ -12,7 +12,8 @@
 
 FactoryBot.define do
   factory :article do
-    url "www.sample_url.com"
-    title "Sample Article"
+    url { Faker::Internet.url }
+    title { Faker::Book.title }
+    description { Faker::Dune.quote }
   end
 end

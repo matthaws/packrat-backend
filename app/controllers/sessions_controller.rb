@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
   def create
     @user = User.from_omniauth(request.env["omniauth.auth"])
-    debugger
     if @user.persisted?
       @token = JWTAuth.encode(@user.username)
       render 'users/show'

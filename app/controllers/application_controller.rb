@@ -9,7 +9,8 @@ class ApplicationController < ActionController::API
     current_user != nil
   end
 
-  def autheticate_user!
+  def authenticate_user!
+    debugger
     head :unauthorized unless logged_in?
   end
 end
