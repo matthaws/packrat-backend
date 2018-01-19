@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Auth API' do
   let(:test_user) { FactoryBot.build(:user) }
 
-  it 'can log in with github' do
+  it 'can log in with github with valid credentials' do
     sign_in_with_github(test_user)
     expect(response.status).to eq(302)
     expect(response.request.params["name"]).to eq(test_user.username)

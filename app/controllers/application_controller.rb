@@ -10,7 +10,6 @@ class ApplicationController < ActionController::API
   end
 
   def authenticate_user!
-    debugger
     head :unauthorized unless logged_in?
   end
 end
