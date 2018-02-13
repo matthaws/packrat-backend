@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::API
   def current_user
-    token = params[:auth_token]
+    token = request.headers['Authorization']
+    debugger
     payload = JWTAuth.decode(token)
     @current_user ||= User.find_by_username(payload[0]['sub'])
   end
